@@ -1,0 +1,9 @@
+admin: user
+user: user
+rusbitech_path: /opt/rusbitech/
+eims_version: eims-Elina
+eims_path: "{{ rusbitech_path }}/{{ eims_version }}"
+eims_conf: "{{ eims_path }}/conf"
+variants: "{{ eims_path }}/variants"
+resource: "{{ eims_path }}/resource"
+scriptwriters: "{{ eims_conf }}/scriptwriters"
