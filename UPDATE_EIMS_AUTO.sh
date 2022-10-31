@@ -4,6 +4,6 @@
  echo "Скачивается версия ИМС:"
  echo $p
  lftp -e "get $p -o eims.tar.gz && exit" 100.100.105.110
-# ansible-playbook eims-update.yml
-# rm ./eims.tar.gz
+ ansible-playbook eims-update.yml
+ rm ./eims.tar.gz
  echo "----------Завершено----------"
